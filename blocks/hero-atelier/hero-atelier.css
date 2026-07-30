@@ -1,0 +1,148 @@
+/* Import component-specific tokens */
+@import url('./hero-atelier-tokens.css');
+
+/* hero-atelier block styles */
+.hero-atelier-container .hero-atelier-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.hero-atelier {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: var(--hero-atelier-min-height);
+  padding: var(--hero-atelier-padding-top-mobile) var(--hero-atelier-padding-x-mobile)
+    var(--hero-atelier-padding-bottom-mobile);
+  overflow: hidden;
+}
+
+/* Cream fallback only when there is no background image */
+.hero-atelier.no-image {
+  background: var(--hero-atelier-background);
+}
+
+.hero-atelier.no-image * {
+  color: var(--hero-atelier-button-color);
+}
+
+/* Background image (full-bleed) */
+.hero-atelier picture {
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.hero-atelier img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Dark scrim overlay for text legibility */
+.hero-atelier::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: var(--hero-atelier-overlay);
+}
+
+/* Content block */
+.hero-atelier > div {
+  max-width: var(--hero-atelier-content-max-width);
+  padding: var(--hero-atelier-item-padding);
+}
+
+/* Body copy (base paragraph) */
+.hero-atelier p {
+  margin: 0 0 var(--hero-atelier-body-margin-bottom);
+  font-family: var(--hero-atelier-body-font-family);
+  font-size: var(--hero-atelier-body-font-size);
+  font-weight: var(--hero-atelier-body-font-weight);
+  font-style: var(--hero-atelier-body-font-style);
+  line-height: var(--hero-atelier-body-line-height);
+  letter-spacing: var(--hero-atelier-body-letter-spacing);
+  color: var(--hero-atelier-body-color);
+}
+
+/* Eyebrow / overline — first paragraph */
+.hero-atelier p:first-of-type {
+  margin: 0 0 var(--hero-atelier-eyebrow-margin-bottom);
+  font-family: var(--hero-atelier-eyebrow-font-family);
+  font-size: var(--hero-atelier-eyebrow-font-size);
+  font-weight: var(--hero-atelier-eyebrow-font-weight);
+  font-style: var(--hero-atelier-eyebrow-font-style);
+  line-height: var(--hero-atelier-eyebrow-line-height);
+  letter-spacing: var(--hero-atelier-eyebrow-letter-spacing);
+  text-transform: var(--hero-atelier-eyebrow-text-transform);
+  color: var(--hero-atelier-eyebrow-color);
+}
+
+/* Heading */
+.hero-atelier h1,
+.hero-atelier h2 {
+  margin: 0 0 var(--hero-atelier-heading-margin-bottom);
+  font-family: var(--hero-atelier-heading-font-family);
+  font-size: var(--hero-atelier-heading-font-size-mobile);
+  font-weight: var(--hero-atelier-heading-font-weight);
+  font-style: var(--hero-atelier-heading-font-style);
+  line-height: var(--hero-atelier-heading-line-height-mobile);
+  letter-spacing: var(--hero-atelier-heading-letter-spacing);
+  text-transform: var(--hero-atelier-heading-text-transform);
+  color: var(--hero-atelier-heading-color);
+}
+
+/* CTA button group */
+.hero-atelier p.button-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: var(--hero-atelier-button-gap);
+  margin-bottom: 0;
+}
+
+.hero-atelier a.button,
+.hero-atelier a.button:any-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--hero-atelier-button-height);
+  padding: var(--hero-atelier-button-padding-y) var(--hero-atelier-button-padding-x);
+  font-family: var(--hero-atelier-button-font-family);
+  font-size: var(--hero-atelier-button-font-size);
+  font-weight: var(--hero-atelier-button-font-weight);
+  font-style: var(--hero-atelier-button-font-style);
+  letter-spacing: var(--hero-atelier-button-letter-spacing);
+  text-transform: var(--hero-atelier-button-text-transform);
+  text-decoration: none;
+  color: var(--hero-atelier-button-color);
+  background: var(--hero-atelier-button-background);
+  border: var(--hero-atelier-button-border-width) var(--hero-atelier-button-border-style)
+    var(--hero-atelier-button-border-color);
+  border-radius: var(--hero-atelier-button-border-radius);
+  transition: background var(--hero-atelier-transition-duration) var(--hero-atelier-transition-timing),
+    color var(--hero-atelier-transition-duration) var(--hero-atelier-transition-timing);
+}
+
+.hero-atelier a.button:hover,
+.hero-atelier a.button:focus {
+  color: var(--hero-atelier-button-hover-color);
+  background: var(--hero-atelier-button-hover-background);
+  transform: var(--hero-atelier-button-hover-transform);
+}
+
+@media (width >= 900px) {
+  .hero-atelier {
+    padding: var(--hero-atelier-padding-top) var(--hero-atelier-padding-right)
+      var(--hero-atelier-padding-bottom) var(--hero-atelier-padding-left);
+  }
+
+  .hero-atelier h1,
+  .hero-atelier h2 {
+    font-size: var(--hero-atelier-heading-font-size);
+    line-height: var(--hero-atelier-heading-line-height);
+  }
+}
