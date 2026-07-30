@@ -1,0 +1,41 @@
+{
+  "variantName": "cards-product",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-07-30T00:00:00.000Z",
+  "sourceContext": {
+    "source": "figma",
+    "figmaFileKey": "zAo2OHpJ1kTUgycwOa1vvw",
+    "figmaNodeId": "17:10198",
+    "figmaNodeName": "Fréscopa top sellers",
+    "figmaUrl": "https://figma.com/design/zAo2OHpJ1kTUgycwOa1vvw?node-id=17-10198"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "product",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "3-up product cards on a cream band: product image + name + price + Shop Now CTA per card",
+    "buttonCount": 3,
+    "imageCount": 3
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "product / top-seller grids",
+      "cards with image, title, price and CTA"
+    ],
+    "notSuitableFor": [
+      "text-only card grids",
+      "dark backgrounds"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "frescopa-home"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-07-30T00:00:00.000Z"
+  }
+}

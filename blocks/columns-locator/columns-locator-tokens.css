@@ -1,0 +1,89 @@
+/* blocks/columns-locator/columns-locator-tokens.css */
+
+/* All values extracted from columns-locator-measurements.txt */
+
+/* Source: Figma node 17:10198 (Store Locator), file zAo2OHpJ1kTUgycwOa1vvw */
+
+.columns-locator {
+  /* ===== LAYOUT & DIMENSIONS ===== */
+  --columns-locator-max-width: 1420px;
+  --columns-locator-min-height: 300px;
+  --columns-locator-gap: 0;
+  --columns-locator-columns: 2;
+  --columns-locator-left-basis: 40%;
+  --columns-locator-right-basis: 60%;
+
+  /* ===== PANEL / CONTAINER COLORS ===== */
+  --columns-locator-left-background: #dc6e52;
+  --columns-locator-right-background: #d5d5d5;
+  --columns-locator-panel-radius: 0;
+
+  /* ===== PANEL PADDING ===== */
+  --columns-locator-panel-padding-top: 48px;
+  --columns-locator-panel-padding-right: 40px;
+  --columns-locator-panel-padding-bottom: 48px;
+  --columns-locator-panel-padding-left: 40px;
+  --columns-locator-panel-padding-mobile: 32px 24px;
+
+  /* ===== TYPOGRAPHY - HEADING ===== */
+  --columns-locator-heading-font-family: 'Baskervville', georgia, serif;
+  --columns-locator-heading-font-size: 36px;
+  --columns-locator-heading-font-weight: 400;
+  --columns-locator-heading-font-style: normal;
+  --columns-locator-heading-line-height: 40px;
+  --columns-locator-heading-letter-spacing: 0;
+  --columns-locator-heading-text-transform: none;
+  --columns-locator-heading-color: #fff;
+  --columns-locator-heading-margin-bottom: 24px;
+
+  /* ===== TYPOGRAPHY - LABEL / BODY ===== */
+  --columns-locator-label-font-family: 'Roboto', sans-serif;
+  --columns-locator-label-font-size: 14px;
+  --columns-locator-label-font-weight: 500;
+  --columns-locator-label-font-style: normal;
+  --columns-locator-label-line-height: 20px;
+  --columns-locator-label-letter-spacing: 1px;
+  --columns-locator-label-text-transform: uppercase;
+  --columns-locator-label-color: #fff;
+  --columns-locator-label-margin-bottom: 12px;
+
+  /* ===== INPUT / SEARCH ===== */
+  --columns-locator-input-font-family: 'Roboto', sans-serif;
+  --columns-locator-input-font-size: 16px;
+  --columns-locator-input-height: 44px;
+  --columns-locator-input-border-radius: 22px;
+  --columns-locator-input-padding-x: 20px;
+  --columns-locator-input-background: #fff;
+  --columns-locator-input-color: #58181d;
+
+  /* ===== BUTTON ===== */
+  --columns-locator-button-background: #fff;
+  --columns-locator-button-color: #58181d;
+  --columns-locator-button-border-radius: 22px;
+  --columns-locator-button-padding-x: 24px;
+  --columns-locator-button-padding-y: 10px;
+  --columns-locator-button-font-family: 'Roboto', sans-serif;
+  --columns-locator-button-font-size: 16px;
+  --columns-locator-button-font-weight: 500;
+
+  /* ===== BORDERS ===== */
+  --columns-locator-border-width: 0;
+  --columns-locator-border-style: none;
+  --columns-locator-border-color: transparent;
+
+  /* ===== SHADOWS ===== */
+  --columns-locator-shadow-x: 0;
+  --columns-locator-shadow-y: 0;
+  --columns-locator-shadow-blur: 0;
+  --columns-locator-shadow-spread: 0;
+  --columns-locator-shadow-color: rgb(0 0 0 / 0%);
+
+  /* ===== HOVER STATES ===== */
+  --columns-locator-button-hover-background: #f4e9dc;
+  --columns-locator-button-hover-color: #58181d;
+  --columns-locator-button-hover-transform: none;
+
+  /* ===== TRANSITIONS ===== */
+  --columns-locator-transition-duration: 200ms;
+  --columns-locator-transition-timing: ease;
+}
