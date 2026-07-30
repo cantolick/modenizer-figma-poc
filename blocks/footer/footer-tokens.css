@@ -1,0 +1,41 @@
+/* blocks/footer/footer-tokens.css */
+
+/* Fréscopa footer design tokens (from Figma design system) */
+
+footer {
+  /* ===== LAYOUT ===== */
+  --frescopa-footer-background: #f4e9dc;
+  --frescopa-footer-max-width: 1420px;
+  --frescopa-footer-padding: 56px 40px 40px;
+  --frescopa-footer-padding-mobile: 40px 24px 32px;
+  --frescopa-footer-gap: 48px;
+  --frescopa-footer-column-gap: 32px;
+
+  /* ===== BRAND ===== */
+  --frescopa-footer-brand-font-family: 'Baskervville', georgia, serif;
+  --frescopa-footer-brand-font-size: 26px;
+  --frescopa-footer-brand-color: #58181d;
+  --frescopa-footer-brand-text-color: #58181d;
+  --frescopa-footer-brand-text-size: 14px;
+  --frescopa-footer-brand-line-height: 22px;
+
+  /* ===== COLUMN HEADINGS ===== */
+  --frescopa-footer-heading-font-family: 'Roboto', sans-serif;
+  --frescopa-footer-heading-font-size: 15px;
+  --frescopa-footer-heading-font-weight: 600;
+  --frescopa-footer-heading-color: #58181d;
+  --frescopa-footer-heading-margin-bottom: 14px;
+
+  /* ===== LINKS ===== */
+  --frescopa-footer-link-font-family: 'Roboto', sans-serif;
+  --frescopa-footer-link-font-size: 14px;
+  --frescopa-footer-link-color: #58181d;
+  --frescopa-footer-link-hover-color: #a33532;
+  --frescopa-footer-link-line-height: 30px;
+
+  /* ===== LEGAL ===== */
+  --frescopa-footer-legal-font-family: 'Roboto', sans-serif;
+  --frescopa-footer-legal-font-size: 12px;
+  --frescopa-footer-legal-color: #8a7a6a;
+  --frescopa-footer-legal-margin-top: 40px;
+}

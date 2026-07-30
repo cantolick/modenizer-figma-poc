@@ -1,0 +1,84 @@
+VISUAL MEASUREMENT CHECKLIST FOR hero-quiz
+================================================
+Source: Figma "MyBarista Coffee Quiz" banner, file zAo2OHpJ1kTUgycwOa1vvw
+Date: 2026-07-30
+NOTE: Figma get_metadata/get_design_context rate-limited (429); image
+extraction skipped per user direction. Values from full-page screenshot
+(Phase 1) + site-wide token system (get_variable_defs). Background photo
+is a placeholder.
+
+LAYOUT & DIMENSIONS
+☑ Container width: 1420px content max (source: page content frame width=1420)
+☑ Container height: 420px (source: screenshot banner proportions)
+☑ Container padding: 64px 40px (source: screenshot — teal panel inset from banner edges)
+☑ Grid/Flex gap: 0px (source: single text panel, no gap)
+☑ Column count: 1 (source: text panel left, image behind full-bleed)
+☑ Item width: 480px teal panel (source: screenshot panel width proportion)
+☑ Item height: auto (source: screenshot — panel hugs content)
+
+SPACING (EXACT PIXELS)
+☑ Section padding: 0 (source: banner full content width)
+☑ Item internal padding: 40px 40px 40px 40px (source: screenshot teal panel padding)
+☑ Gap between items: 0px (source: single panel)
+☑ Margin between text elements: eyebrow→heading 16px; heading→button 24px (source: screenshot rhythm)
+☑ Image margin/padding: 0px (source: full-bleed background image)
+
+COLORS (EXACT HEX + OPACITY)
+☑ Background color (image overlay panel): #00647d (opacity: 88%) (source: variable "Frescopa - Blue"/"Primary"; solid teal panel in screenshot)
+☑ Banner background: image (source: screenshot — sunset photo of woman with coffee; placeholder used)
+☑ Primary text color: #ffffff (source: variable "Frescopa - White"; white heading on teal)
+☑ Secondary text color: #ffffff (source: white eyebrow text)
+☑ Eyebrow accent color: #eba439 (source: variable "Tertiary"; amber "MYBARISTA COFFEE QUIZ" accent line in screenshot)
+☑ Accent/link color: #ffffff (source: white label on coral button)
+☑ Button background: #dc6e52 (source: variable "Secondary"/"Frescopa - Button Secondary"; coral CTA)
+☑ Button text color: #ffffff (source: variable "Frescopa - White")
+☑ Border color: N/A (opacity: 0%) (source: no borders in screenshot)
+☑ Hover background (button): #c85f45 (source: darker coral on hover convention)
+☑ Hover text color: #ffffff (source: white text stays)
+
+TYPOGRAPHY (ALL PROPERTIES)
+☑ Heading font-family: Baskervville (source: variable "Font-Family/Baskervville"; serif "Enjoy your first cup, on us.")
+☑ Heading font-size: 40px (source: screenshot heading size in panel)
+☑ Heading font-weight: 400 (source: Baskervville token)
+☑ Heading line-height: 44px (source: derived ~1.1x)
+☑ Heading letter-spacing: 0px (source: no tracking in token)
+☑ Heading text-transform: none (source: screenshot mixed case)
+☑ Heading font-style: normal (source: Baskervville Regular)
+☑ Body/eyebrow font-family: Roboto (source: variable "Font-Family/Roboto")
+☑ Body/eyebrow font-size: 14px (source: screenshot small uppercase eyebrow)
+☑ Body/eyebrow font-weight: 500 (source: variable Roboto-18 Medium)
+☑ Body/eyebrow line-height: 20px (source: variable "Tokens/Line Height/20")
+☑ Body/eyebrow letter-spacing: 1.5px (source: screenshot wide-tracked uppercase)
+☑ Body/eyebrow text-transform: uppercase (source: screenshot "LIGHT ROAST LOVERS")
+☑ Body font-style: normal (source: Roboto Medium)
+
+BUTTON
+☑ Button font-family: Roboto (source: variable "Font-Family/Roboto")
+☑ Button font-size: 16px (source: screenshot CTA text size)
+☑ Button font-weight: 500 (source: Roboto Medium)
+☑ Button font-style: normal (source: Roboto Medium)
+☑ Button letter-spacing: 0px (source: no tracking)
+☑ Button text-transform: none (source: screenshot "Grab Your Free Coffee Coupon" mixed case)
+☑ Button padding-x: 24px (source: screenshot button proportions)
+☑ Button padding-y: 12px (source: screenshot button height ~45px)
+☑ Button border-radius: 22px (source: screenshot rounded pill button)
+
+BORDERS & RADIUS
+☑ Border width: 0px (source: no borders in screenshot)
+☑ Border style: none (source: no border styling)
+☑ Border color: N/A (source: no border present)
+☑ Border radius (panel): 0px (source: screenshot — square teal panel)
+☑ Border radius (button): 22px (source: pill button)
+
+SHADOWS
+☑ Box-shadow offset-x: 0px (source: no visible shadow on panel)
+☑ Box-shadow offset-y: 0px (source: no visible shadow)
+☑ Box-shadow blur: 0px (source: no visible shadow)
+☑ Box-shadow spread: 0px (source: no visible shadow)
+☑ Box-shadow color: rgba(0,0,0,0) (source: no shadow present)
+
+EFFECTS & TRANSITIONS
+☑ Hover transform: none (source: color transition only)
+☑ Transition duration: 200ms (source: EDS convention)
+☑ Transition timing: ease (source: EDS convention)
+☑ Opacity changes: none (source: color transition only)

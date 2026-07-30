@@ -1,0 +1,45 @@
+{
+  "variantName": "hero-quiz",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-07-30T00:00:00.000Z",
+  "sourceContext": {
+    "source": "figma",
+    "figmaFileKey": "zAo2OHpJ1kTUgycwOa1vvw",
+    "figmaNodeId": "17:10198",
+    "figmaNodeName": "MyBarista Coffee Quiz banner",
+    "figmaUrl": "https://figma.com/design/zAo2OHpJ1kTUgycwOa1vvw?node-id=17-10198"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "accent",
+    "density": "spacious",
+    "purpose": "cta",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "full-bleed photo with a contained teal overlay panel: eyebrow + serif heading + coral CTA. Includes a `rewards` modifier for a full-width solid teal band (icon + heading/body + CTA laid out horizontally).",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "modifiers": {
+    "rewards": "Full-width solid teal CTA band: inline gift icon, heading with italic accent word + body copy, and a coral CTA — row layout on desktop, stacked on mobile. No background photo/contained panel."
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "promotional banners with a contained color panel over a photo",
+      "single-CTA campaign bands",
+      "full-width solid-color CTA bands (via .rewards modifier)"
+    ],
+    "notSuitableFor": [
+      "full-width centered hero headlines",
+      "text-only sections"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "frescopa-home"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-07-30T00:00:00.000Z"
+  }
+}

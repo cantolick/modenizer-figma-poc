@@ -1,6 +1,19 @@
+@import url('./header-tokens.css');
+
+/* Announcement bar (top strip) */
+header .nav-announcement-bar {
+  background-color: var(--frescopa-header-announcement-background);
+  color: var(--frescopa-header-announcement-color);
+  text-align: center;
+}
+
+header .nav-announcement {
+  padding: var(--frescopa-header-announcement-padding);
+}
+
 /* header and nav layout */
 header .nav-wrapper {
-  background-color: var(--background-color);
+  background-color: var(--frescopa-header-background);
   width: 100%;
   z-index: 2;
   position: fixed;
@@ -266,7 +279,63 @@ header nav .nav-sections ul > li > ul > li {
   }
 }
 
-/* tools */
+/* ===== Fréscopa brand styling ===== */
+header .nav-brand p a:any-link {
+  font-family: var(--frescopa-header-brand-font-family);
+  font-size: var(--frescopa-header-brand-font-size);
+  font-weight: var(--frescopa-header-brand-font-weight);
+  color: var(--frescopa-header-brand-color);
+  text-decoration: none;
+}
+
+/* ===== Fréscopa nav links ===== */
+header nav .nav-sections a:any-link {
+  font-family: var(--frescopa-header-link-font-family);
+  font-size: var(--frescopa-header-link-font-size);
+  font-weight: var(--frescopa-header-link-font-weight);
+  color: var(--frescopa-header-link-color);
+  text-decoration: none;
+}
+
+header nav .nav-sections a:hover {
+  color: var(--frescopa-header-link-hover-color);
+}
+
+/* ===== Fréscopa tools (account / cart) ===== */
 header nav .nav-tools {
   grid-area: tools;
+}
+
+header nav .nav-tools .default-content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--frescopa-header-tools-gap);
+}
+
+header nav .nav-tools p {
+  margin: 0;
+}
+
+header nav .nav-tools a:any-link {
+  font-family: var(--frescopa-header-tools-font-family);
+  font-size: var(--frescopa-header-tools-font-size);
+  color: var(--frescopa-header-tools-color);
+  text-decoration: none;
+}
+
+@media (width >= 900px) {
+  header nav .nav-sections ul {
+    gap: var(--frescopa-header-link-gap);
+  }
+}
+
+/* Announcement bar text (placed last to satisfy specificity ordering) */
+header .nav-announcement-bar .nav-announcement p {
+  margin: 0;
+  font-family: var(--frescopa-header-announcement-font-family);
+  font-size: var(--frescopa-header-announcement-font-size);
+  font-weight: var(--frescopa-header-announcement-font-weight);
+  letter-spacing: var(--frescopa-header-announcement-letter-spacing);
+  text-transform: uppercase;
+  color: var(--frescopa-header-announcement-color);
 }
