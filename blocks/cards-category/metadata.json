@@ -1,0 +1,41 @@
+{
+  "variantName": "cards-category",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-07-30T00:00:00.000Z",
+  "sourceContext": {
+    "source": "figma",
+    "figmaFileKey": "zAo2OHpJ1kTUgycwOa1vvw",
+    "figmaNodeId": "17:10198",
+    "figmaNodeName": "Shop all Fréscopa products",
+    "figmaUrl": "https://figma.com/design/zAo2OHpJ1kTUgycwOa1vvw?node-id=17-10198"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "cards",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "row of compact icon cards (line-art icon + label), with a section heading and Show-All CTA in the header row",
+    "buttonCount": 0,
+    "imageCount": 5
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "category / navigation icon grids",
+      "compact icon-and-label card rows"
+    ],
+    "notSuitableFor": [
+      "cards needing per-card price or CTA",
+      "large image cards"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "frescopa-home"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-07-30T00:00:00.000Z"
+  }
+}

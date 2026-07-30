@@ -1,6 +1,27 @@
 /* Import component-specific tokens */
 @import url('./cards-product-tokens.css');
 
+/* Cream band for the Top Sellers section (section with a plain cards-product block) */
+main .section:has(.cards-product:not(.feature)) {
+  padding: var(--cards-product-section-padding-mobile);
+  background-color: var(--cards-product-section-background);
+}
+
+main .section:has(.cards-product:not(.feature)) h2 {
+  margin: 0 0 var(--cards-product-section-heading-margin-bottom);
+  font-family: var(--cards-product-section-heading-font-family);
+  font-size: var(--cards-product-section-heading-font-size);
+  font-weight: var(--cards-product-section-heading-font-weight);
+  line-height: var(--cards-product-section-heading-line-height);
+  color: var(--cards-product-section-heading-color);
+}
+
+@media (width >= 900px) {
+  main .section:has(.cards-product:not(.feature)) {
+    padding: var(--cards-product-section-padding);
+  }
+}
+
 /* cards-product block styles */
 .cards-product > ul {
   display: grid;
@@ -16,8 +37,6 @@
   flex-direction: column;
   overflow: hidden;
   background-color: var(--cards-product-item-background);
-  border: var(--cards-product-item-border-width) var(--cards-product-item-border-style)
-    var(--cards-product-item-border-color);
   border-radius: var(--cards-product-item-border-radius);
   box-shadow: var(--cards-product-item-shadow-x) var(--cards-product-item-shadow-y)
     var(--cards-product-item-shadow-blur) var(--cards-product-item-shadow-spread)
@@ -111,5 +130,55 @@
 @media (width >= 900px) {
   .cards-product > ul {
     grid-template-columns: repeat(var(--cards-product-columns), 1fr);
+  }
+}
+
+/* ===== FEATURE MODIFIER — 2-up flat image + heading + body + CTA panels ===== */
+.cards-product.feature > ul {
+  gap: var(--cards-product-feature-gap);
+}
+
+/* Feature panels keep the base card chrome (white bg, border, shadow, radius,
+   hover-lift) — only the image aspect ratio and body padding differ. */
+.cards-product.feature > ul > li img {
+  aspect-ratio: var(--cards-product-feature-image-aspect-ratio);
+  object-fit: cover;
+}
+
+.cards-product.feature .cards-product-card-body {
+  padding: var(--cards-product-feature-body-padding);
+}
+
+/* Body copy — base paragraph */
+.cards-product.feature .cards-product-card-body p {
+  margin: 0 0 var(--cards-product-feature-text-margin-bottom);
+  font-family: var(--cards-product-feature-text-font-family);
+  font-size: var(--cards-product-feature-text-font-size);
+  font-weight: var(--cards-product-feature-text-font-weight);
+  line-height: var(--cards-product-feature-text-line-height);
+  color: var(--cards-product-feature-text-color);
+}
+
+/* Heading — first paragraph or h3 */
+.cards-product.feature .cards-product-card-body p:first-child,
+.cards-product.feature .cards-product-card-body h3 {
+  margin: 0 0 var(--cards-product-feature-heading-margin-bottom);
+  font-size: var(--cards-product-feature-heading-font-size);
+  line-height: var(--cards-product-feature-heading-line-height);
+}
+
+/* First panel CTA (coral); second panel keeps the default teal */
+.cards-product.feature > ul > li:first-child a.button {
+  background: var(--cards-product-feature-button-alt-background);
+}
+
+.cards-product.feature > ul > li:first-child a.button:hover,
+.cards-product.feature > ul > li:first-child a.button:focus {
+  background: var(--cards-product-feature-button-alt-hover-background);
+}
+
+@media (width >= 900px) {
+  .cards-product.feature > ul {
+    grid-template-columns: repeat(var(--cards-product-feature-columns), 1fr);
   }
 }

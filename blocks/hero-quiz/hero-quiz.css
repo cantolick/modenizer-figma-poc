@@ -1,0 +1,188 @@
+/* Import component-specific tokens */
+@import url('./hero-quiz-tokens.css');
+
+/* hero-quiz block styles */
+.hero-quiz-container .hero-quiz-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.hero-quiz {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: var(--hero-quiz-max-width);
+  min-height: var(--hero-quiz-min-height-mobile);
+  padding: var(--hero-quiz-outer-padding-mobile);
+  overflow: hidden;
+}
+
+/* Full-bleed background image (first row) */
+.hero-quiz picture {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.hero-quiz img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Teal text panel (the div that is not the image) */
+.hero-quiz > div:last-child {
+  width: 100%;
+  max-width: var(--hero-quiz-panel-width);
+  padding: var(--hero-quiz-panel-padding-mobile);
+  background: var(--hero-quiz-panel-background);
+  border-radius: var(--hero-quiz-panel-radius);
+}
+
+/* Eyebrow — first paragraph */
+.hero-quiz > div:last-child p:first-of-type {
+  margin: 0 0 var(--hero-quiz-eyebrow-margin-bottom);
+  font-family: var(--hero-quiz-eyebrow-font-family);
+  font-size: var(--hero-quiz-eyebrow-font-size);
+  font-weight: var(--hero-quiz-eyebrow-font-weight);
+  font-style: var(--hero-quiz-eyebrow-font-style);
+  line-height: var(--hero-quiz-eyebrow-line-height);
+  letter-spacing: var(--hero-quiz-eyebrow-letter-spacing);
+  text-transform: var(--hero-quiz-eyebrow-text-transform);
+  color: var(--hero-quiz-eyebrow-color);
+}
+
+/* Accent emphasis inside eyebrow (e.g. MYBARISTA COFFEE QUIZ) */
+.hero-quiz > div:last-child p:first-of-type strong {
+  color: var(--hero-quiz-eyebrow-accent-color);
+}
+
+/* Heading */
+.hero-quiz h1,
+.hero-quiz h2,
+.hero-quiz h3 {
+  margin: 0 0 var(--hero-quiz-heading-margin-bottom);
+  font-family: var(--hero-quiz-heading-font-family);
+  font-size: var(--hero-quiz-heading-font-size);
+  font-weight: var(--hero-quiz-heading-font-weight);
+  font-style: var(--hero-quiz-heading-font-style);
+  line-height: var(--hero-quiz-heading-line-height);
+  letter-spacing: var(--hero-quiz-heading-letter-spacing);
+  text-transform: var(--hero-quiz-heading-text-transform);
+  color: var(--hero-quiz-heading-color);
+}
+
+/* CTA button */
+.hero-quiz p.button-container {
+  margin: 0;
+}
+
+.hero-quiz a.button,
+.hero-quiz a.button:any-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--hero-quiz-button-padding-y) var(--hero-quiz-button-padding-x);
+  font-family: var(--hero-quiz-button-font-family);
+  font-size: var(--hero-quiz-button-font-size);
+  font-weight: var(--hero-quiz-button-font-weight);
+  font-style: var(--hero-quiz-button-font-style);
+  letter-spacing: var(--hero-quiz-button-letter-spacing);
+  text-transform: var(--hero-quiz-button-text-transform);
+  text-decoration: none;
+  color: var(--hero-quiz-button-color);
+  background: var(--hero-quiz-button-background);
+  border: var(--hero-quiz-border-width) var(--hero-quiz-border-style) var(--hero-quiz-border-color);
+  border-radius: var(--hero-quiz-button-border-radius);
+  transition: background var(--hero-quiz-transition-duration) var(--hero-quiz-transition-timing),
+    color var(--hero-quiz-transition-duration) var(--hero-quiz-transition-timing);
+}
+
+.hero-quiz a.button:hover,
+.hero-quiz a.button:focus {
+  color: var(--hero-quiz-button-hover-color);
+  background: var(--hero-quiz-button-hover-background);
+  transform: var(--hero-quiz-button-hover-transform);
+}
+
+@media (width >= 900px) {
+  .hero-quiz {
+    min-height: var(--hero-quiz-min-height);
+    padding: var(--hero-quiz-outer-padding);
+  }
+
+  .hero-quiz > div:last-child {
+    padding: var(--hero-quiz-panel-padding);
+  }
+}
+
+/* ===== REWARDS MODIFIER — full-width solid teal CTA band (icon + text + CTA) ===== */
+.hero-quiz.rewards {
+  flex-direction: column;
+  gap: var(--hero-quiz-rewards-gap);
+  min-height: var(--hero-quiz-rewards-min-height);
+  padding: var(--hero-quiz-rewards-padding-mobile);
+  text-align: center;
+  background: var(--hero-quiz-rewards-background);
+}
+
+/* Gift icon becomes an inline flex item (not a full-bleed background) */
+.hero-quiz.rewards picture {
+  position: static;
+  z-index: auto;
+  flex: 0 0 auto;
+}
+
+.hero-quiz.rewards picture img {
+  width: var(--hero-quiz-rewards-icon-size);
+  height: var(--hero-quiz-rewards-icon-size);
+  object-fit: contain;
+}
+
+/* Text block and CTA sit inline; no contained panel */
+.hero-quiz.rewards > div {
+  width: auto;
+  max-width: none;
+  padding: 0;
+  background: none;
+}
+
+.hero-quiz.rewards h1,
+.hero-quiz.rewards h2,
+.hero-quiz.rewards h3 {
+  margin: 0 0 var(--hero-quiz-rewards-heading-margin-bottom);
+  font-size: var(--hero-quiz-rewards-heading-font-size);
+  line-height: var(--hero-quiz-rewards-heading-line-height);
+}
+
+.hero-quiz.rewards > div p:first-of-type {
+  margin: 0;
+  font-family: var(--hero-quiz-rewards-text-font-family);
+  font-size: var(--hero-quiz-rewards-text-font-size);
+  font-weight: var(--hero-quiz-rewards-text-font-weight);
+  line-height: var(--hero-quiz-rewards-text-line-height);
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--hero-quiz-rewards-text-color);
+}
+
+.hero-quiz.rewards > div p.button-container {
+  margin: 0;
+}
+
+@media (width >= 900px) {
+  .hero-quiz.rewards {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--hero-quiz-rewards-padding);
+    text-align: left;
+  }
+
+  /* middle text block grows; icon and CTA stay intrinsic */
+  .hero-quiz.rewards > div:not(:first-child, :last-child) {
+    flex: 1;
+  }
+}

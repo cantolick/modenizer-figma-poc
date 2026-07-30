@@ -1,0 +1,117 @@
+/* Import component-specific tokens */
+@import url('./cards-category-tokens.css');
+
+/* Section: heading row + white band for the Shop all products section */
+main .section:has(.cards-category) {
+  padding: var(--cards-category-section-padding);
+}
+
+/* Header row: heading left, CTA right */
+main .section:has(.cards-category) .default-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--cards-category-header-gap);
+  margin-bottom: var(--cards-category-header-margin-bottom);
+}
+
+main .section:has(.cards-category) .default-content-wrapper h2 {
+  margin: 0;
+  font-family: var(--cards-category-section-heading-font-family);
+  font-size: var(--cards-category-section-heading-font-size);
+  font-weight: var(--cards-category-section-heading-font-weight);
+  line-height: var(--cards-category-section-heading-line-height);
+  color: var(--cards-category-section-heading-color);
+}
+
+main .section:has(.cards-category) .default-content-wrapper p.button-container {
+  margin: 0;
+}
+
+main .section:has(.cards-category) .default-content-wrapper a.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--cards-category-cta-padding-y) var(--cards-category-cta-padding-x);
+  font-family: var(--cards-category-cta-font-family);
+  font-size: var(--cards-category-cta-font-size);
+  font-weight: var(--cards-category-cta-font-weight);
+  text-decoration: none;
+  color: var(--cards-category-cta-color);
+  background: var(--cards-category-cta-background);
+  border-radius: var(--cards-category-cta-border-radius);
+  transition: background var(--cards-category-transition-duration) var(--cards-category-transition-timing);
+}
+
+main .section:has(.cards-category) .default-content-wrapper a.button:hover,
+main .section:has(.cards-category) .default-content-wrapper a.button:focus {
+  background: var(--cards-category-cta-hover-background);
+}
+
+/* cards-category block styles */
+.cards-category > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--cards-category-min-col-width), 1fr));
+  gap: var(--cards-category-gap);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cards-category > ul > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--cards-category-item-padding);
+  text-align: center;
+  background-color: var(--cards-category-item-background);
+  border-radius: var(--cards-category-item-border-radius);
+  box-shadow: var(--cards-category-item-shadow-x) var(--cards-category-item-shadow-y)
+    var(--cards-category-item-shadow-blur) var(--cards-category-item-shadow-spread)
+    var(--cards-category-item-shadow-color);
+  transition: transform var(--cards-category-transition-duration) var(--cards-category-transition-timing),
+    box-shadow var(--cards-category-transition-duration) var(--cards-category-transition-timing);
+}
+
+.cards-category > ul > li:hover {
+  transform: var(--cards-category-item-hover-transform);
+  box-shadow: var(--cards-category-item-shadow-x) var(--cards-category-item-hover-shadow-y)
+    var(--cards-category-item-hover-shadow-blur) var(--cards-category-item-shadow-spread)
+    var(--cards-category-item-hover-shadow-color);
+}
+
+/* Icon */
+.cards-category .cards-category-card-image {
+  margin-bottom: var(--cards-category-icon-margin-bottom);
+  line-height: 0;
+}
+
+.cards-category .cards-category-card-image img {
+  width: var(--cards-category-icon-size);
+  height: var(--cards-category-icon-size);
+  object-fit: contain;
+}
+
+/* Label */
+.cards-category .cards-category-card-body {
+  font-family: var(--cards-category-label-font-family);
+  font-size: var(--cards-category-label-font-size);
+  font-weight: var(--cards-category-label-font-weight);
+  font-style: var(--cards-category-label-font-style);
+  line-height: var(--cards-category-label-line-height);
+  letter-spacing: var(--cards-category-label-letter-spacing);
+  text-transform: var(--cards-category-label-text-transform);
+  color: var(--cards-category-label-color);
+}
+
+.cards-category .cards-category-card-body p {
+  margin: 0;
+}
+
+@media (width >= 900px) {
+  .cards-category > ul {
+    grid-template-columns: repeat(var(--cards-category-columns), 1fr);
+  }
+}

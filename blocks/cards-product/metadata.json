@@ -17,14 +17,18 @@
     "imagePattern": "large"
   },
   "contentPattern": {
-    "structure": "3-up product cards on a cream band: product image + name + price + Shop Now CTA per card",
+    "structure": "3-up product cards on a cream band: product image + name + price + Shop Now CTA per card. Includes a `feature` modifier for 2-up flat image + heading + body + CTA panels.",
     "buttonCount": 3,
     "imageCount": 3
+  },
+  "modifiers": {
+    "feature": "2-up flat panels (no card chrome): rounded image on top, serif heading, body copy, and CTA. First panel CTA renders coral, second teal."
   },
   "reuseGuidance": {
     "suitableFor": [
       "product / top-seller grids",
-      "cards with image, title, price and CTA"
+      "cards with image, title, price and CTA",
+      "2-up feature/promo panels (via .feature modifier)"
     ],
     "notSuitableFor": [
       "text-only card grids",

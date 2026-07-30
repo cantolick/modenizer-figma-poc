@@ -1,0 +1,38 @@
+/* blocks/header/header-tokens.css */
+
+/* Fréscopa header design tokens (from Figma design system) */
+
+header {
+  /* ===== ANNOUNCEMENT BAR ===== */
+  --frescopa-header-announcement-background: #a33532;
+  --frescopa-header-announcement-color: #fff;
+  --frescopa-header-announcement-font-family: 'Roboto', sans-serif;
+  --frescopa-header-announcement-font-size: 13px;
+  --frescopa-header-announcement-font-weight: 500;
+  --frescopa-header-announcement-letter-spacing: 0.5px;
+  --frescopa-header-announcement-padding: 8px 24px;
+
+  /* ===== NAV BAR ===== */
+  --frescopa-header-background: #fff;
+  --frescopa-header-nav-padding-y: 12px;
+
+  /* ===== BRAND / LOGO ===== */
+  --frescopa-header-brand-font-family: 'Baskervville', georgia, serif;
+  --frescopa-header-brand-font-size: 28px;
+  --frescopa-header-brand-font-weight: 400;
+  --frescopa-header-brand-color: #58181d;
+
+  /* ===== NAV LINKS ===== */
+  --frescopa-header-link-font-family: 'Roboto', sans-serif;
+  --frescopa-header-link-font-size: 16px;
+  --frescopa-header-link-font-weight: 400;
+  --frescopa-header-link-color: #58181d;
+  --frescopa-header-link-hover-color: #a33532;
+  --frescopa-header-link-gap: 28px;
+
+  /* ===== TOOLS (account / cart) ===== */
+  --frescopa-header-tools-font-family: 'Roboto', sans-serif;
+  --frescopa-header-tools-font-size: 15px;
+  --frescopa-header-tools-color: #58181d;
+  --frescopa-header-tools-gap: 20px;
+}
