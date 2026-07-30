@@ -1,0 +1,41 @@
+{
+  "variantName": "hero-atelier",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-07-30T00:00:00.000Z",
+  "sourceContext": {
+    "source": "figma",
+    "figmaFileKey": "zAo2OHpJ1kTUgycwOa1vvw",
+    "figmaNodeId": "17:10243",
+    "figmaNodeName": "Hero",
+    "figmaUrl": "https://figma.com/design/zAo2OHpJ1kTUgycwOa1vvw?node-id=17-10243"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "eyebrow + heading + body text + 2 CTAs over full-bleed background image",
+    "buttonCount": 2,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "hero sections",
+      "dark image-backed banners with light text"
+    ],
+    "notSuitableFor": [
+      "text-only pages",
+      "light flat-color backgrounds"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "frescopa-home"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-07-30T00:00:00.000Z"
+  }
+}

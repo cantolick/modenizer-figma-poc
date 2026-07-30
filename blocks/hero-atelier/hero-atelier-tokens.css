@@ -1,0 +1,92 @@
+/* blocks/hero-atelier/hero-atelier-tokens.css */
+
+/* All values extracted from hero-atelier-measurements.txt */
+
+/* Source: Figma node 17:10243, file zAo2OHpJ1kTUgycwOa1vvw */
+
+.hero-atelier {
+  /* ===== LAYOUT & DIMENSIONS ===== */
+  --hero-atelier-min-height: 710px;
+  --hero-atelier-content-max-width: 646px;
+  --hero-atelier-padding-top: 154px;
+  --hero-atelier-padding-right: 24px;
+  --hero-atelier-padding-bottom: 77px;
+  --hero-atelier-padding-left: 189px;
+  --hero-atelier-padding-top-mobile: 96px;
+  --hero-atelier-padding-x-mobile: 24px;
+  --hero-atelier-padding-bottom-mobile: 48px;
+
+  /* ===== CONTAINER COLORS / OVERLAY ===== */
+  --hero-atelier-background: #f4e9dc;
+  --hero-atelier-overlay: linear-gradient(90deg, rgb(44 44 44 / 65%) 0%, rgb(44 44 44 / 25%) 60%, rgb(44 44 44 / 10%) 100%);
+
+  /* ===== TYPOGRAPHY - EYEBROW / OVERLINE ===== */
+  --hero-atelier-eyebrow-font-family: 'Roboto', sans-serif;
+  --hero-atelier-eyebrow-font-size: 18px;
+  --hero-atelier-eyebrow-font-weight: 500;
+  --hero-atelier-eyebrow-font-style: normal;
+  --hero-atelier-eyebrow-line-height: 20px;
+  --hero-atelier-eyebrow-letter-spacing: 1.5px;
+  --hero-atelier-eyebrow-text-transform: uppercase;
+  --hero-atelier-eyebrow-color: #fff;
+  --hero-atelier-eyebrow-margin-bottom: 30px;
+
+  /* ===== TYPOGRAPHY - HEADING ===== */
+  --hero-atelier-heading-font-family: 'Baskervville', georgia, serif;
+  --hero-atelier-heading-font-size: 64px;
+  --hero-atelier-heading-font-weight: 400;
+  --hero-atelier-heading-font-style: normal;
+  --hero-atelier-heading-line-height: 68px;
+  --hero-atelier-heading-letter-spacing: 0;
+  --hero-atelier-heading-text-transform: none;
+  --hero-atelier-heading-color: #fff;
+  --hero-atelier-heading-margin-bottom: 29px;
+  --hero-atelier-heading-font-size-mobile: 40px;
+  --hero-atelier-heading-line-height-mobile: 44px;
+
+  /* ===== TYPOGRAPHY - BODY ===== */
+  --hero-atelier-body-font-family: 'Roboto', sans-serif;
+  --hero-atelier-body-font-size: 20px;
+  --hero-atelier-body-font-weight: 400;
+  --hero-atelier-body-font-style: normal;
+  --hero-atelier-body-line-height: 24px;
+  --hero-atelier-body-letter-spacing: 0;
+  --hero-atelier-body-color: #fff;
+  --hero-atelier-body-margin-bottom: 29px;
+
+  /* ===== BUTTONS / CTA ===== */
+  --hero-atelier-button-font-family: 'Roboto', sans-serif;
+  --hero-atelier-button-font-size: 18px;
+  --hero-atelier-button-font-weight: 500;
+  --hero-atelier-button-font-style: normal;
+  --hero-atelier-button-letter-spacing: 0;
+  --hero-atelier-button-text-transform: none;
+  --hero-atelier-button-color: #58181d;
+  --hero-atelier-button-background: #fff;
+  --hero-atelier-button-border-width: 0;
+  --hero-atelier-button-border-style: none;
+  --hero-atelier-button-border-color: transparent;
+  --hero-atelier-button-border-radius: 22px;
+  --hero-atelier-button-padding-x: 24px;
+  --hero-atelier-button-padding-y: 12px;
+  --hero-atelier-button-height: 45px;
+  --hero-atelier-button-gap: 24px;
+
+  /* ===== ITEM PROPERTIES (content block, no card wrapper) ===== */
+  --hero-atelier-item-padding: 0;
+  --hero-atelier-item-border-radius: 0;
+  --hero-atelier-item-shadow-x: 0;
+  --hero-atelier-item-shadow-y: 0;
+  --hero-atelier-item-shadow-blur: 0;
+  --hero-atelier-item-shadow-spread: 0;
+  --hero-atelier-item-shadow-color: rgb(0 0 0 / 0%);
+
+  /* ===== HOVER STATES ===== */
+  --hero-atelier-button-hover-background: #f4e9dc;
+  --hero-atelier-button-hover-color: #58181d;
+  --hero-atelier-button-hover-transform: none;
+
+  /* ===== TRANSITIONS ===== */
+  --hero-atelier-transition-duration: 200ms;
+  --hero-atelier-transition-timing: ease;
+}
