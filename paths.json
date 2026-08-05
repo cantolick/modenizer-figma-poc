@@ -1,9 +1,0 @@
-{
-  "mappings": [
-    "/content/modenizer-figma-poc/:/",
-    "/content/modenizer-figma-poc/configuration:/.helix/config.json"
-  ],
-  "includes": [
-    "/content/modenizer-figma-poc/"
-  ]
-}
