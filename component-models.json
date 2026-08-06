@@ -212,6 +212,23 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "classes",
+        "label": "Style",
+        "valueType": "string",
+        "value": "",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "Atelier",
+            "value": "atelier"
+          }
+        ]
       }
     ]
   }
