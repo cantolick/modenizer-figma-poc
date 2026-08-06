@@ -124,14 +124,6 @@ export default async function decorate(block) {
   nav.id = 'nav';
   while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
 
-  // extract optional announcement bar (4th nav section) BEFORE any DOM shifts
-  let announcement = null;
-  if (nav.children.length > 3) {
-    [, , , announcement] = nav.children;
-    announcement.classList.add('nav-announcement');
-    announcement.remove();
-  }
-
   const classes = ['brand', 'sections', 'tools'];
   classes.forEach((c, i) => {
     const section = nav.children[i];
@@ -171,14 +163,6 @@ export default async function decorate(block) {
   // prevent mobile nav behavior on window resize
   toggleMenu(nav, navSections, isDesktop.matches);
   isDesktop.addEventListener('change', () => toggleMenu(nav, navSections, isDesktop.matches));
-
-  // render the announcement bar as a top strip above the nav
-  if (announcement) {
-    const announcementBar = document.createElement('div');
-    announcementBar.className = 'nav-announcement-bar';
-    announcementBar.append(announcement);
-    block.append(announcementBar);
-  }
 
   const navWrapper = document.createElement('div');
   navWrapper.className = 'nav-wrapper';

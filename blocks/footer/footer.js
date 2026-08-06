@@ -16,12 +16,5 @@ export default async function decorate(block) {
   const footer = document.createElement('div');
   while (fragment.firstElementChild) footer.append(fragment.firstElementChild);
 
-  // label the top-level sections so CSS can style them
-  const sectionClasses = ['footer-brand', 'footer-links', 'footer-legal'];
-  sectionClasses.forEach((c, i) => {
-    const section = footer.children[i];
-    if (section) section.classList.add(c);
-  });
-
   block.append(footer);
 }

@@ -1,103 +1,20 @@
-@import url('./footer-tokens.css');
-
 footer {
-  background-color: var(--frescopa-footer-background);
+  background-color: var(--light-color);
+  font-size: var(--body-font-size-xs);
 }
 
 footer .footer > div {
-  display: flex;
-  flex-direction: column;
-  gap: var(--frescopa-footer-gap);
   margin: auto;
-  max-width: var(--frescopa-footer-max-width);
-  padding: var(--frescopa-footer-padding-mobile);
+  max-width: 1200px;
+  padding: 40px 24px 24px;
 }
 
 footer .footer p {
   margin: 0;
 }
 
-/* ===== Brand block ===== */
-footer .footer-brand p {
-  font-family: var(--frescopa-footer-link-font-family);
-  font-size: var(--frescopa-footer-brand-text-size);
-  line-height: var(--frescopa-footer-brand-line-height);
-  color: var(--frescopa-footer-brand-text-color);
-}
-
-footer .footer-brand p:first-child {
-  margin-bottom: 12px;
-  font-family: var(--frescopa-footer-brand-font-family);
-  font-size: var(--frescopa-footer-brand-font-size);
-  color: var(--frescopa-footer-brand-color);
-}
-
-/* ===== Link columns ===== */
-footer .footer-links {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--frescopa-footer-column-gap);
-}
-
-footer .footer-links > div > p:first-child {
-  margin-bottom: var(--frescopa-footer-heading-margin-bottom);
-  font-family: var(--frescopa-footer-heading-font-family);
-  font-size: var(--frescopa-footer-heading-font-size);
-  font-weight: var(--frescopa-footer-heading-font-weight);
-  color: var(--frescopa-footer-heading-color);
-}
-
-footer .footer-links ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-footer .footer-links li {
-  line-height: var(--frescopa-footer-link-line-height);
-}
-
-footer .footer-links a:any-link {
-  font-family: var(--frescopa-footer-link-font-family);
-  font-size: var(--frescopa-footer-link-font-size);
-  color: var(--frescopa-footer-link-color);
-  text-decoration: none;
-}
-
-footer .footer-links a:hover {
-  color: var(--frescopa-footer-link-hover-color);
-}
-
-/* ===== Legal ===== */
-footer .footer > div .footer-legal p {
-  font-family: var(--frescopa-footer-legal-font-family);
-  font-size: var(--frescopa-footer-legal-font-size);
-  color: var(--frescopa-footer-legal-color);
-}
-
 @media (width >= 900px) {
-  /* place brand + columns side by side */
   footer .footer > div {
-    display: grid;
-    grid-template-columns: 280px 1fr;
-    grid-template-areas:
-      'brand links'
-      'legal legal';
-    padding: var(--frescopa-footer-padding);
-  }
-
-  footer .footer-brand {
-    grid-area: brand;
-    max-width: 280px;
-  }
-
-  footer .footer-links {
-    grid-area: links;
-    grid-template-columns: repeat(5, 1fr);
-  }
-
-  footer .footer-legal {
-    grid-area: legal;
-    margin-top: var(--frescopa-footer-legal-margin-top);
+    padding: 40px 32px 24px;
   }
 }

@@ -1,0 +1,5 @@
+mountpoints:
+  /:
+    url: "https://author-p110511-e1076828.adobeaemcloud.com/bin/franklin.delivery/cantolick/modenizer-figma-poc/main"
+    type: "markup"
+    suffix: ".html"
