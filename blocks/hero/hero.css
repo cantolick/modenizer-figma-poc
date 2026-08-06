@@ -1,3 +1,4 @@
+/* Base hero (default variant) */
 .hero-container .hero-wrapper {
   max-width: unset;
   padding: 0;
@@ -9,6 +10,18 @@
   min-height: 300px;
 }
 
+.hero picture {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .hero h1 {
   max-width: 1200px;
   margin-left: auto;
@@ -16,22 +29,145 @@
   color: var(--background-color);
 }
 
-.hero picture {
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
-}
-
-.hero img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
 @media (width >= 900px) {
   .hero {
     padding: 40px 32px;
+  }
+}
+
+/* Atelier variant — Frescopa hero migrated from Figma */
+.hero.atelier {
+  /* Frescopa design tokens (scoped to the variant) */
+  --hero-cream: #f4e9dc;
+  --hero-text-dark: #58181d;
+  --hero-white: #fff;
+  --hero-serif-font: baskervville, "times new roman", georgia, serif;
+
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 420px;
+  padding: 48px 24px;
+  overflow: hidden;
+}
+
+.hero.atelier .hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.hero.atelier .hero-content > * {
+  margin: 0;
+}
+
+.hero.atelier .hero-eyebrow {
+  color: var(--hero-white);
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.hero.atelier .hero-content h1 {
+  max-width: none;
+  margin: 0;
+  color: var(--hero-white);
+  font-family: var(--hero-serif-font);
+  font-size: clamp(2.5rem, 5.5vw, 64px);
+  font-weight: 400;
+  line-height: 1.06;
+}
+
+.hero.atelier .hero-content p:not(.hero-eyebrow, .button-wrapper) {
+  max-width: 548px;
+  color: var(--hero-white);
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.hero.atelier .hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.hero.atelier .hero-buttons .button-wrapper {
+  margin: 0;
+}
+
+.hero.atelier .hero-content a.button:any-link {
+  border-radius: 24px;
+  padding: 0.6em 1.4em;
+  font-family: var(--body-font-family);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.hero.atelier .hero-content a.button.primary:any-link {
+  border-color: var(--hero-cream);
+  background-color: var(--hero-cream);
+  color: var(--hero-text-dark);
+}
+
+.hero.atelier .hero-content a.button.primary:hover,
+.hero.atelier .hero-content a.button.primary:focus-visible {
+  border-color: var(--hero-white);
+  background-color: var(--hero-white);
+  color: var(--hero-text-dark);
+}
+
+.hero.atelier .hero-content a.button.secondary:any-link {
+  border-color: var(--hero-cream);
+  background-color: transparent;
+  color: var(--hero-cream);
+}
+
+.hero.atelier .hero-content a.button.secondary:hover,
+.hero.atelier .hero-content a.button.secondary:focus-visible {
+  border-color: var(--hero-white);
+  background-color: rgb(244 233 220 / 15%);
+  color: var(--hero-white);
+}
+
+@media (width >= 600px) {
+  .hero.atelier {
+    padding: 56px 40px;
+  }
+}
+
+@media (width >= 900px) {
+  .hero.atelier {
+    min-height: 560px;
+    padding: 64px 48px;
+  }
+
+  .hero.atelier .hero-eyebrow {
+    font-size: 20px;
+  }
+
+  .hero.atelier .hero-content p:not(.hero-eyebrow, .button-wrapper) {
+    font-size: 22px;
+    line-height: 1.18;
+  }
+}
+
+@media (width >= 1200px) {
+  .hero.atelier .hero-content {
+    max-width: 1200px;
+  }
+
+  .hero.atelier .hero-content h1,
+  .hero.atelier .hero-content p:not(.hero-eyebrow, .button-wrapper) {
+    max-width: 646px;
   }
 }

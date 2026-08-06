@@ -2,7 +2,11 @@
   "sites": {
     "modenizer-figma-poc": {
       "previewOrg": "cantolick",
-      "previewSite": "modenizer-figma-poc"
+      "previewSite": "modenizer-figma-poc",
+      "aemSitePath": "/content/modenizer-figma-poc",
+      "aemAssetsFolderPath": "/content/dam/modenizer-figma-poc",
+      "aemSiteName": "modenizer-figma-poc",
+      "aemSiteTitle": "modenizer-figma-poc"
     }
   }
 }
